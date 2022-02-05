@@ -1,0 +1,70 @@
+/*----------------------------------
+
+_mixin.scss : 믹스인
+
+----------------------------------*/
+
+//반응형
+//@mixin rwd( mobile | tablet | pc ) { 내용 }
+@mixin rwd($break_point) {
+    @if ( $break_point == tablet ) {
+        @media only screen and ( max-width: #{$break_point_tablet} ) {
+            @content;
+        }
+    }
+    @if ( $break_point == mobile ) {
+        @media only screen and ( max-width: #{$break_point_mobile} ) {
+            @content;
+        }
+    }
+    //※PC브레이크포인트가 위로 깨졌을 때 적용됨
+    @if ( $break_point == pc ) {
+        @media only screen and ( min-width: #{$break_point_pc} ) {
+            @content;
+        }
+    }
+}
+
+//플렉스컬럼
+@mixin  flex_column($row_gap) {
+    display: flex;
+    flex-direction: column;
+    row-gap: $row_gap;
+}
+//플렉스로우
+@mixin  flex_row($col_gap) {
+    display: flex;
+    flex-direction: row;
+    column-gap: $col_gap;
+}
+
+//프로필이미지
+@mixin profile_img ($width, $height) {
+    @extend %profile_img;
+    width: $width;
+    height: $height;
+}
+
+//트렌지션
+@mixin transition($attr) {
+    transition: $attr 400ms cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+
+//마진 xy
+@mixin mx($spacing) {
+    margin-right: $spacing;
+    margin-left: $spacing;
+}
+@mixin my($spacing) {
+    margin-top: $spacing;
+    margin-bottom: $spacing;
+}
+//패딩xy
+@mixin px($spacing) {
+    padding-right: $spacing;
+    padding-left: $spacing;
+}
+@mixin py($spacing) {
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+}

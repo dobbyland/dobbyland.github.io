@@ -1,0 +1,10 @@
+@charset 'utf-8';
+/*----------------------------------
+
+abstracts_for_component.scss : 컴포넌트에서 참조하기 위한 추상적 항목들
+
+----------------------------------*/
+@import './abstract';
+@import './mixin';
+@import './placeholder';
+@import './variable';

@@ -1,0 +1,56 @@
+/*----------------------------------
+
+_font.scss : 폰트 설정
+
+----------------------------------*/
+
+//한글
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url(../font/NotoSansKR/NotoSansKR-Thin.otf);
+    font-weight: 100;
+    unicode-range: U+AC00-D7A3;
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url(../font/NotoSansKR/NotoSansKR-Regular.otf);
+    font-weight: 400;
+    unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url(../font/NotoSansKR/NotoSansKR-Bold.otf);
+    font-weight: 700;
+    unicode-range: U+AC00-D7A3;
+}
+
+//나머지 (=영어,숫자,특문)
+@font-face {
+    font-family: 'Lato';
+    src: url(../font/Lato/Lato-Thin.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(../font/Lato/Lato-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(../font/Lato/Lato-Bold.ttf);
+    font-weight: 700;
+}
+
+html {
+    font-family: 'NotoSansKR', 'Lato';
+    font-size: $root_font_size;
+    font-weight: 400;
+    color: $black;
+    @include rwd(tablet) {
+        font-size: 18px;
+    };
+    @include rwd(mobile) {
+        font-size: 14px;
+    };
+}

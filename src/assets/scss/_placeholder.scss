@@ -1,0 +1,107 @@
+/*----------------------------------
+
+_placeholder.scss : 플레이스홀더
+
+----------------------------------*/
+
+//스크린 아웃
+%screen_out {
+    width: 0 !important;
+    height: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+%container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1200px;
+    @include rwd(tablet) {
+        max-width: unset;
+    }
+    @include rwd(mobile) {
+    }
+}
+
+%f {
+    display: flex;
+    flex-wrap: wrap;
+    &_j {
+        &_s {
+            @extend %f;
+            justify-content: flex-start;
+        }
+        &_c {
+            @extend %f;
+            justify-content: center;
+        }
+        &_e {
+            @extend %f;
+            justify-content: flex-end;
+        }
+        &_sb {
+            @extend %f;
+            justify-content: space-between;
+        }
+    }
+    &_a {
+        &_s {
+            @extend %f;
+            align-items: flex-start;
+        }
+        &_c {
+            @extend %f;
+            align-items: center;
+        }
+        &_e {
+            @extend %f;
+            align-items: flex-end;
+        }
+    }
+    &_c_c {
+        @extend %f_a_c;
+        @extend %f_j_c;
+    }
+}
+%brm {
+    border-radius: 999px;
+}
+%profile_img {
+    @extend %brm;
+    overflow: hidden;
+    display: inline-block;
+    object-fit: cover;
+    object-position: center;
+}
+%p_0 {
+    padding: 0;
+}
+%px_0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+%py_0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+%m_0 {
+    margin: 0;
+}
+%mx_0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+%my_0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+%tdn {
+    text-decoration: none;
+}
+
+%backdrop_blur {
+    backdrop-filter: blur(5px);
+}
