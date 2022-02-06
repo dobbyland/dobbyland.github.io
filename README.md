@@ -6,7 +6,7 @@
 ```plaintext
 react, redux-toolkit, scss
 ```
-> 참고: 해당 프로젝트는 Redux + TypeScript template(npx create-react-app my-app --template redux-typescript) 으로 생성되었습니다.
+> 참고: 해당 프로젝트는 [Redux + TypeScript template (npx create-react-app my-app --template redux-typescript)](https://redux-toolkit.js.org/introduction/getting-started#using-create-react-app) 으로 생성되었습니다.
 
 <br>
 
