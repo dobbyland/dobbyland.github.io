@@ -6,7 +6,7 @@
 ```plaintext
 React, Redux Toolkit, TypeScript, SCSS, Webpack, Atoimic Design Pattern
 ```
-> 참고: 해당 프로젝트는 [Redux + TypeScript template](https://redux-toolkit.js.org/introduction/getting-started#using-create-react-app) 으로 생성되었습니다.
+> 참고: 해당 프로젝트는 원래 [Redux + TypeScript template](https://redux-toolkit.js.org/introduction/getting-started#using-create-react-app) 으로 생성되었습니다.
 
 <br>
 
