@@ -1,6 +1,6 @@
 # 도비랜드 프론트엔드
 
-<br>
+<br />
 
 ### 1. 기술스택
 ```plaintext
@@ -8,7 +8,7 @@ React, Redux Toolkit, TypeScript, SCSS, Webpack, Atoimic Design Pattern
 ```
 > 참고: 해당 프로젝트는 원래 [Redux + TypeScript template](https://redux-toolkit.js.org/introduction/getting-started#using-create-react-app) 으로 생성되었습니다.
 
-<br>
+<br />
 
 ### 2. 스크립트
 
@@ -20,4 +20,4 @@ React, Redux Toolkit, TypeScript, SCSS, Webpack, Atoimic Design Pattern
 
 `npm run build` : 배포를 위한 빌드파일을 `/build` 디렉토리에 생성합니다.
 
-<br>
+<br />
