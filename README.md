@@ -6,11 +6,15 @@
 ```plaintext
 react, redux-toolkit, scss
 ```
+> 참고: 해당 프로젝트는 Redux + TypeScript template(npx create-react-app my-app --template redux-typescript) 으로 생성되었습니다.
 
 <br>
 
 ### 2. 스크립트
 
+루트 디렉토리에서 다음 스크립트를 사용할 수 있습니다 :
+
+`npm install` :  package.json을 참조하여 node_modules를 설치합니다.
 
 `npm start` : 개발모드로 리액트를 실행합니다. 파일이 수정될 때마다 페이지가 새로고침됩니다.
 
