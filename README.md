@@ -4,7 +4,7 @@
 
 ### 1. 기술스택
 ```plaintext
-react, redux-toolkit, scss
+react, redux-toolkit, scss, webpack
 ```
 > 참고: 해당 프로젝트는 [Redux + TypeScript template](https://redux-toolkit.js.org/introduction/getting-started#using-create-react-app) 으로 생성되었습니다.
 
