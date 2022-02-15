@@ -3,10 +3,10 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 
-
 function App() {
   return (
     <>
+      
       <header>
 
         <nav>
@@ -15,7 +15,7 @@ function App() {
               <Link to='/'>홈</Link>
             </li>
             <li>
-              <Link to='/about'>회사소개</Link>
+              <Link to='/about'>어바웃</Link>
             </li>
           </ul>
         </nav>
