@@ -1,7 +1,7 @@
 const About = () => {
     return (
         <>
-            <p>어바웃입니다.</p>
+            <p>This About</p>
         </>
     )
 };
