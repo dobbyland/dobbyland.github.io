@@ -26,10 +26,10 @@ function App() {
 						</li>
 					</ul>
 				</nav>
-				<LogginBox>
+				<LoginBox>
 					<button className={`sign_in`}>Sign in</button>
 					<button className={`sign_up`}>Join us</button>
-				</LogginBox>
+				</LoginBox>
 			</Header>
 			<Main>
 				<Inner>
@@ -72,7 +72,7 @@ const Main = styled.main`
 const Footer = styled.footer`
 	margin-top: 50px;
   padding: 50px 30px;
-	background-color: ${theme.color.brand};
+	background-color: #E2EAF3;
 `;
 
 const Inner = styled.div`
@@ -80,7 +80,7 @@ const Inner = styled.div`
 	margin: 0 auto;
 `;
 
-const LogginBox = styled.div`
+const LoginBox = styled.div`
   display: flex;
 	column-gap: 20px;
 	button {
