@@ -82,6 +82,10 @@ a {
   text-decoration: none;
 }
 
+a:-webkit-any-link {
+  color: unset;
+}
+
 a:visited {
     color: unset;
 }
