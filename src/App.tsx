@@ -9,20 +9,20 @@ function App() {
 	return (
 		<>
 			<Header>
-				<Link to={`/`}>DL</Link>
+				<Link to={`/`}>도비랜드</Link>
 				<nav>
 					<ul>
 						<li>
-							<Link to="/about">About</Link>
+							<Link to="/about">about</Link>
 						</li>
 						<li>
-							<Link to="/portfolio">Portfolio</Link>
+							<Link to="/portfolio">portfolio</Link>
 						</li>
 						<li>
-							<Link to="/board/list/notice">MEGAPHONE</Link>
+							<Link to="/board/list/notice">notice</Link>
 						</li>
 						<li>
-							<Link to="/inquiry">Inquiry</Link>
+							<Link to="/inquiry">inquiry</Link>
 						</li>
 					</ul>
 				</nav>
@@ -56,6 +56,11 @@ const Header = styled.header`
 		  
     	display: flex;
 		  justify-content: space-between;
+		  li {
+			  a {
+				  text-transform: capitalize;
+			  }
+		  }
 	  }
   }
 `;
@@ -77,10 +82,11 @@ const Inner = styled.div`
 
 const LogginBox = styled.div`
   display: flex;
-	column-gap: 12px;
+	column-gap: 20px;
 	button {
-		border: 1px solid ${theme.color.default};
-		padding: 20px;
+		border: 1px solid ${theme.color.gray};
+		padding: 15px 20px;
+		border-radius: 10px;
 	}
 `;
 
