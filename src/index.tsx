@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { ThemeProvider } from "styled-components";
+import theme from 'theme';
 import GlobalStyle from './GlobalStyle';
 
 ReactDOM.render(
   <React.StrictMode>
       <BrowserRouter>
-        <GlobalStyle />
-        <App />
+          <ThemeProvider theme={theme}>
+            <GlobalStyle />
+            <App />
+          </ThemeProvider>
       </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
