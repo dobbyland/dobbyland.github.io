@@ -50,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html {
-    font-family: 'NotoSansKR', 'Lato';
+    font-family: 'NotoSansKR', 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #333333;
